@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blabblepedia - The Official Blabble Encyclopedia</title>
+    <style>
+        :root {
+            --bg-color: #f6f6f6;
+            --card-bg: #ffffff;
+            --text-color: #202122;
+            --border-color: #a2a9b1;
+            --accent-color: #36c;
+            --header-bg: #eaecf0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        .infobox {
+            width: 280px;
+            background-color: #f8f9fa;
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            font-size: 0.9rem;
+            height: fit-content;
+        }
+
+        .infobox h3 {
+            text-align: center;
+            margin-top: 0;
+            background: var(--header-bg);
+            padding: 5px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .infobox-data {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            margin-bottom: 5px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 5px;
+        }
+
+        .infobox-label {
+            font-weight: bold;
+        }
+
+        h2 {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            color: var(--text-color);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #72777d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blabblepedia</h1>
+        <span>The Free Blabble Lore Encyclopedia</span>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Welcome to Blabblepedia</h2>
+            <p><strong>Blabblepedia</strong> is the official community archive dedicated to cataloging the history, biology, and world of <strong>Blabbles</strong> across <strong>Blath</strong>.</p>
+
+            <h2>Overview: The Blabble</h2>
+            <p>A <strong>Blabble</strong> (plural: <em>Blabbles</em>) is a distinct species native to the world of Blath. According to ancient lore records, the first Blabbles officialy <strong>spawned in the year 503 BW</strong> (Before War), which corresponds to <strong>1495</strong> in standard terrestrial reckoning.</p>
+
+            <h2>Geography: Blath</h2>
+            <p><strong>Blath</strong> (commonly referred to by inhabitants as <em>"blabs"</em>) is the home world of the Blabbles—effectively the Blabble equivalent of Earth. It features diverse terrain, ancient spawn grounds, and the central civilization hub known as Blabbleland.</p>
+
+            <h2>Key Historical Eras & Locations</h2>
+            <ul>
+                <li><strong>503 BW (1495):</strong> The First Spawning of the Blabbles on Blath.</li>
+                <li><strong>200 BW:</strong> The official founding and establishment of <strong>Blabbleland</strong>.</li>
+            </ul>
+
+            <h2>Blabbleland</h2>
+            <p>Established in <strong>200 BW</strong>, <strong>Blabbleland</strong> serves as the central region and sanctuary for all Blabbles residing on Blath. It was constructed 303 years after the initial spawning event and remains a core focus of ongoing historical record-keeping.</p>
+        </div>
+
+        <aside class="infobox">
+            <h3>Blath (Blabs)</h3>
+            <div class="infobox-data">
+                <span class="infobox-label">Primary Species:</span>
+                <span>Blabble</span>
+            </div>
+            <div class="infobox-data">
+                <span class="infobox-label">First Spawn:</span>
+                <span>503 BW (1495)</span>
+            </div>
+            <div class="infobox-data">
+                <span class="infobox-label">Main Hub:</span>
+                <span>Blabbleland</span>
+            </div>
+            <div class="infobox-data">
+                <span class="infobox-label">Founded:</span>
+                <span>200 BW</span>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        Content available under Blabble Community License. Powered by GitHub Pages.
+    </footer>
+
+</body>
+</html>
